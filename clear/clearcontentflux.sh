@@ -5,12 +5,12 @@ echo ""
 echo $(date "+%Y-%m-%d_%H-%M-%S")
 echo ""
 
-mkdir /home/gds/Documentos/IC2/dataset/cleared
+mkdir /path
 
 for livro in *.txt; do
       echo "# Livro: $livro"
 
-      ./clearBook "$livro" "/home/gds/Documentos/IC2/dataset/cleared/"
+      ./clearBook "$livro" "/path/"
 done
 
 
