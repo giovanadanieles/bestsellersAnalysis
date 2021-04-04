@@ -18,7 +18,9 @@ using namespace std;
 string outputBook;
 string tempBookName = "tempFile";
 
-void createClearedBook(ifstream &bookReadFile){
+void create
+
+Book(ifstream &bookReadFile){
     string line;
     int nOfLines = 0, actNOfLines = 0;
     ofstream clearedBook(outputBook);
@@ -143,7 +145,7 @@ int main(int argc, char* const argv[]){
             i++;
         }
 
-        outputBook += "_cleared";
+        outputBook += "_cleared.txt";
 
         ifstream bookInFile( inputBook.c_str() );
         ofstream bookOfFile( tempBookName.c_str() );
